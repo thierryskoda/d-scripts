@@ -41,6 +41,6 @@ if (isValidScript(script)) {
 
   process.exit(result.status)
 } else {
-  console.error(`  ${chalk.red('Unkown script')} "${chalk.bold(script)}".`)
+  console.error(chalk`  {red Unkown script} "{bold ${script}}".`)
   process.exit(1)
 }
