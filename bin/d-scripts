@@ -6,7 +6,8 @@ const chalk = require('chalk')
 const SIGKILL_MSG = `Exited too early. Either the process run out of memory or someone called "kill -9" on it.`
 const SIGTERM_MSG = `Exited too early. Someone called "kill", "killall" or the system is shutting down.`
 
-const isValidScript = x => x === 'format' || x === 'lint' || x === 'test'
+const isValidScript = x =>
+  x === 'init' || x === 'format' || x === 'lint' || x === 'test'
 
 const buildCommandArgs = (args, nodeArgs, scriptIndex, scriptName) => [
   ...nodeArgs,

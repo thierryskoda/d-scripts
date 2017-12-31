@@ -1,5 +1,3 @@
-// TODO: add opt out of this feature
-
 const fs = require('fs')
 const path = require('path')
 const chalk = require('chalk')
@@ -19,7 +17,11 @@ Object.assign(pkg.scripts, {
 writeFile(pkgPath, JSON.stringify(pkg, null, 2), 'utf8')
   .then(() => {
     console.log()
-    console.log(`  ${chalk.bold('package.json')} scripts updated!`)
+    console.log(
+      `  ${chalk.bold('d-scripts')} available scripts to ${chalk.bold(
+        'package.json'
+      )}!`
+    )
     console.log()
   })
   .catch(err => {

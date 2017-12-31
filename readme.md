@@ -1,6 +1,8 @@
-# d-scripts
+<h1 align="center">
+  d-scripts
+</h1>
 
-> handle node project tasks with no configuration
+<p align="center">Handle node project development tasks with no configuration.</p>
 
 ## Install
 
