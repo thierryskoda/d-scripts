@@ -1,7 +1,7 @@
 {
   "name": "d-scripts",
   "version": "0.0.7",
-  "description": "Handle node apps tasks with no configuration",
+  "description": "Handle node projects development tasks with no configuration",
   "bin": {
     "d-scripts": "./bin/d-scripts"
   },
@@ -10,12 +10,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gillchristian/d-scripts.git"
+    "url": "git+https://github.com/trae/d-scripts.git"
   },
   "bugs": {
-    "url": "https://github.com/gillchristian/d-scripts/issues"
+    "url": "https://github.com/trae/d-scripts/issues"
   },
-  "homepage": "https://github.com/gillchristian/d-scripts#readme",
+  "homepage": "https://github.com/trae/d-scripts#readme",
   "scripts": {
     "test": "jest",
     "cover": "yarn test --cover",
