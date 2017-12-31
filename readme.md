@@ -12,53 +12,44 @@ $ yarn add --dev d-scripts
 
 ## Usage
 
-`d-scripts` exposes a series of scripts to handle development tasks. All the scripts configuration can be overridden by adding your own confing for the tools.
+`d-scripts` exposes a series of scripts to handle development tasks. 
 
-The default configuration can be found [here](https://github.com/gillchristian/d-scripts/blob/master/config).
-
-**NOTE**: it includes all the dependencies so you don't have to install them.
+```bash
+$ d-scripts [script] [options]
+```
 
 ### Available scripts
 
-#### Init
-
-```bash
-$ d-scripts init
-```
+#### `init`
 
 Adds the available scripts to the project's `package.json`. 
 
 **WARNING**: it will override anything you have in the properties `test`, `lint` and `format` of the `scripts` field.
 
-#### Format
-
-```bash
-$ d-scripts format
-```
+#### `format`
 
 Runs prettier on write mode.
 
-#### Lint
-
-```bash
-$ d-scripts lint
-```
+#### `lint`
 
 Runs ESlint with `--cache` flag, you can override that with `--no-cache`.
 
-#### Test
-
-```bash
-$ d-scripts test
-```
+#### `test`
 
 Runs Jest. By default it runs in watch mode unless you are checking coverage (`--coverage`), used the `--no-watch` flag or is running CI (checked by [`is-ci`](https://github.com/watson/is-ci)).
+
+## Configuration
+
+All the scripts configuration can be overridden by adding your own confing for the tools. The default configuration can be found [here](https://github.com/gillchristian/d-scripts/blob/master/config).
+
+**NOTE**: it includes all the dependencies so you don't have to install them.
  
 ## TODO
 
 - Format code on `precommit`.
 - Ask before writing `package.json` on `d-scripts init`.
-- Run (lint, format) with the lprovided ist of files instead of the default ones.
+- Run (lint, format) with the provided list of files instead of the default ones.
+- Forward options & flags to the scripts.
 
 ## Inspiration
 
