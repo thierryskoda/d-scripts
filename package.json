@@ -1,6 +1,6 @@
 {
   "name": "d-scripts",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Handle node projects development tasks with no configuration",
   "bin": {
     "d-scripts": "./bin/d-scripts"
