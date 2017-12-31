@@ -10,6 +10,8 @@
 $ yarn add --dev d-scripts
 ```
 
+> **NOTE**: it includes all the dependencies (prettier, jest, eslint, etc) so you don't have to install them.
+
 ## Usage
 
 `d-scripts` exposes a series of scripts to handle development tasks. 
@@ -44,17 +46,15 @@ Since ESLint editor integrations require project based configuration to work a l
 }
 ```
 
-> **NOTE**: a `.eslintignore` is required [this eslint issue is resolved](https://github.com/eslint/eslint/issues/9227).
+> **NOTE**: a `.eslintignore` is required until [this eslint issue is resolved](https://github.com/eslint/eslint/issues/9227).
 
 #### `test`
 
-Runs Jest. By default it runs in watch mode unless you are checking coverage (`--coverage`), used the `--no-watch` flag or is running CI (checked by [`is-ci`](https://github.com/watson/is-ci)).
+Runs Jest. By default it runs in watch mode unless you are checking coverage (`--coverage`), used the `--no-watch` flag or is running in CI (checked by [`is-ci`](https://github.com/watson/is-ci)).
 
 ## Configuration
 
 All the scripts configuration can be overridden by adding your own confing for the tools. The default configuration can be found [here](https://github.com/gillchristian/d-scripts/blob/master/config).
-
-> **NOTE**: it includes all the dependencies so you don't have to install them.
  
 ## TODO
 
