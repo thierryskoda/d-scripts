@@ -30,7 +30,7 @@ const write = args.includes('--no-write') ? [] : ['--write']
 const filesToApply = ['**/*.js', 'bin/*']
 
 const result = spawn.sync(
-  'yarn', // TODO: resolve prettier bin to use
+  'yarn', // TODO: resolve prettier bin instead of using yarn
   ['prettier', ...config, ...ignore, ...write, ...filesToApply],
   { stdio: 'inherit' }
 )
