@@ -6,6 +6,16 @@
     "d-scripts": "./bin/d-scripts"
   },
   "main": "index.js",
+  "author": "gillchristian <gillchristiang@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gillchristian/d-scripts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gillchristian/d-scripts/issues"
+  },
+  "homepage": "https://github.com/gillchristian/d-scripts#readme",
   "scripts": {
     "test": "jest",
     "cover": "yarn test --cover",
