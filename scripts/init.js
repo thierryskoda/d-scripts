@@ -30,13 +30,13 @@ function writePkg() {
 
 const proceedMessage = chalk`The following scripts will be added to your package.json:
 
-    {cyan lint}         {reset - d-scripts lint}
-    {cyan format}       {reset - d-scripts format}
-    {cyan test}         {reset - d-scripts test}
-    {cyan test:cover}   {reset - d-scripts test --coverage}
+  {cyan lint}         {reset - d-scripts lint}
+  {cyan format}       {reset - d-scripts format}
+  {cyan test}         {reset - d-scripts test}
+  {cyan test:cover}   {reset - d-scripts test --coverage}
 
-  If you already have some of these scripts defined they will be overriden.
-  Are you sure you want to continue?`
+If you already have some of these scripts defined they will be overriden.
+Are you sure you want to continue?`
 
 const questions = [
   {

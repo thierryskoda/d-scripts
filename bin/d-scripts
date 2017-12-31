@@ -25,19 +25,14 @@ if (isValidScript(script)) {
 
   const result = spawn.sync('node', commandArgs, { stdio: 'inherit' })
 
-  if (result.signal) {
-    // eslint-disable-next-line default-case
-    switch (result.signal) {
-      case 'SIGKILL':
-        console.log(SIGKILL_MSG)
-        break
-      case 'SIGTERM':
-        console.log(SIGTERM_MSG)
-        break
-    }
-    console.log(`Exit Code: ${result.status}`)
-
-    process.exit(result.status)
+  // eslint-disable-next-line default-case
+  switch (result.signal) {
+    case 'SIGKILL':
+      console.log(SIGKILL_MSG)
+      break
+    case 'SIGTERM':
+      console.log(SIGTERM_MSG)
+      break
   }
 
   if (result.status > 0) {
