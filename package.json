@@ -21,6 +21,7 @@
     "cover": "yarn test --cover",
     "lint": "eslint .",
     "format": "yarn lint --fix",
+    "postinstall": "node scripts/postinstall",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "precommit": "lint-staged"
   },
