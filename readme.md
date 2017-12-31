@@ -59,7 +59,6 @@ All the scripts configuration can be overridden by adding your own confing for t
 ## TODO
 
 - Format code on `precommit`.
-- Ask before writing `package.json` on `d-scripts init`.
 - Run (lint, format) with the provided list of files instead of the default ones.
 - Forward options & flags to the scripts.
 
