@@ -22,20 +22,18 @@ function writePkg() {
   return writeFile(pkgPath, JSON.stringify(pkg, null, 2), 'utf8').then(() => {
     console.log()
     console.log(
-      `  Added ${chalk.bold('d-scripts')} available scripts to ${chalk.bold(
-        'package.json'
-      )}!`
+      chalk`  Added {bold d-scripts} available scripts to {bold package.json}!`
     )
     console.log()
   })
 }
 
-const proceedMessage = `The following scripts will be added to your package.json:
+const proceedMessage = chalk`The following scripts will be added to your package.json:
 
-    ${chalk.cyan('lint')}         ${chalk.reset('- d-scripts lint')}
-    ${chalk.cyan('format')}       ${chalk.reset('- d-scripts format')}
-    ${chalk.cyan('test')}         ${chalk.reset('- d-scripts test')}
-    ${chalk.cyan('test:cover')}   ${chalk.reset('- d-scripts test --coverage')}
+    {cyan lint}         {reset - d-scripts lint}
+    {cyan format}       {reset - d-scripts format}
+    {cyan test}         {reset - d-scripts test}
+    {cyan test:cover}   {reset - d-scripts test --coverage}
 
   If you already have some of these scripts defined they will be overriden.
   Are you sure you want to continue?`
@@ -59,7 +57,7 @@ inquirer
   .catch(err => {
     console.log()
     console.log(
-      `Error while trying to add scripts to ${chalk.bold('package.json')}.`
+      chalk`Error while trying to add scripts to {bold package.json}.`
     )
     console.log()
     console.error(err)
