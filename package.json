@@ -1,0 +1,50 @@
+{
+  "name": "d-scripts",
+  "version": "0.0.1",
+  "description": "Handle node apps tasks with no configuration",
+  "bin": {
+    "d-scripts": "./bin/d-scripts"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "cover": "yarn test --cover",
+    "lint": "eslint .",
+    "format": "yarn lint --fix",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "cross-spawn": "^5.1.0",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^1.7.0",
+    "eslint-plugin-jsx-a11y": "^1.2.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^5.1.1",
+    "husky": "^0.14.3",
+    "is-ci": "^1.0.10",
+    "lint-staged": "^6.0.0",
+    "milieu": "1.0.1",
+    "prettier": "^1.9.2",
+    "read-pkg-up": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^22.0.4"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "yarn format",
+      "git add"
+    ],
+    "bin/*": [
+      "yarn format",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.9.3"
+  }
+}
