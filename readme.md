@@ -24,7 +24,7 @@ $ d-scripts [script] [options]
 
 Adds the available scripts to the project's `package.json`. 
 
-**WARNING**: it will override anything you have in the properties `test`, `lint` and `format` of the `scripts` field.
+> **WARNING**: it will override anything you have in the properties `test`, `lint` and `format` of the `scripts` field.
 
 #### `format`
 
@@ -32,7 +32,19 @@ Runs prettier on write mode.
 
 #### `lint`
 
-Runs ESlint with `--cache` flag, you can override that with `--no-cache`.
+Runs ESLint with `--cache` flag, you can override that with `--no-cache`.
+
+Since ESLint editor integrations require project based configuration to work a local `eslintrc` is needed, for that you can use [`eslint-config-d`](https://github.com/trae/eslint-config-d).
+
+```json
+{
+  "extends": [
+    "d"
+  ]
+}
+```
+
+> **NOTE**: a `.eslintignore` is required [this eslint issue is resolved](https://github.com/eslint/eslint/issues/9227).
 
 #### `test`
 
@@ -42,7 +54,7 @@ Runs Jest. By default it runs in watch mode unless you are checking coverage (`-
 
 All the scripts configuration can be overridden by adding your own confing for the tools. The default configuration can be found [here](https://github.com/gillchristian/d-scripts/blob/master/config).
 
-**NOTE**: it includes all the dependencies so you don't have to install them.
+> **NOTE**: it includes all the dependencies so you don't have to install them.
  
 ## TODO
 
