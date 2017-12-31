@@ -35,13 +35,13 @@ if (isValidScript(script)) {
         console.log(SIGTERM_MSG)
         break
     }
-    console.log(`Code: ${result.status}`)
+    console.log(`Exit Code: ${result.status}`)
 
     process.exit(result.status)
   }
 
   if (result.status > 0) {
-    console.log(`Code: ${result.status}`)
+    console.log(`Exit Code: ${result.status}`)
   }
 
   process.exit(result.status)
