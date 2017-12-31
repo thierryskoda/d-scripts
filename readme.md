@@ -2,7 +2,7 @@
   d-scripts
 </h1>
 
-<p align="center">Handle node project development tasks with no configuration.</p>
+<p align="center">Handle node projects development tasks with no configuration.</p>
 
 ## Install
 
