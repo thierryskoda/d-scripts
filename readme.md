@@ -54,20 +54,21 @@ Runs Jest. By default it runs in watch mode unless you are checking coverage (`-
 
 ## Configuration
 
-All the scripts configuration can be overridden by adding your own confing for the tools. The default configuration can be found [here](https://github.com/gillchristian/d-scripts/blob/master/config).
+`d-scripts` provides an opinionated set of configurations. But all of it can be overridden by adding your own. `d-scripts` will use the configuration files (or `package.json` property) for each tool if present. The default configuration can be found [here](https://github.com/gillchristian/d-scripts/blob/master/config).
  
 ## TODO
 
-- Format code on `precommit`.
+- `precommit` hook to format and lint code.
 - Run (lint, format) with the provided list of files instead of the default ones.
 - Forward options & flags to the scripts.
 
 ## Inspiration
 
-- [Tools without config 🛠📦](https://blog.kentcdodds.com/automation-without-config-412ab5e47229) by [@kentcdodds](https://github.com/kentcdodds/).
-- [Dan Abramov - The Melting Pot of JavaScript](https://www.youtube.com/watch?v=G39lKaONAlA&feature=youtu.be).
+`d-scripts` is our take to provide "tools without config". It was strongly inspired by [@kentcdodds](https://github.com/kentcdodds/)'s version [`kcd-scripts`](https://github.com/kentcdodds/kcd-scripts).
+
 - `react-scripts` from [`create-react-app`](https://github.com/facebookincubator/create-react-app).
-- [`kcd-scripts`](https://github.com/kentcdodds/kcd-scripts).
+- [Dan Abramov - The Melting Pot of JavaScript](https://www.youtube.com/watch?v=G39lKaONAlA&feature=youtu.be).
+- [Tools without config 🛠📦](https://blog.kentcdodds.com/automation-without-config-412ab5e47229) by [@kentcdodds](https://github.com/kentcdodds/).
 
 ## LICENSE
 
